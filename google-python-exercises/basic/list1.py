@@ -44,11 +44,7 @@ def front_x(words):
             l_with_x.append(word)
         else:
             l_without_x.append(word)
-    l_with_x.sort()
-    l_without_x.sort()
-
-    return l_with_x + l_without_x
-
+    return sorted(l_with_x) + sorted(l_without_x)
 
 # C. sort_last
 # Given a list of non-empty tuples, return a list sorted in increasing
